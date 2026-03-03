@@ -69,12 +69,14 @@
 		</div>
 	</header>
 
-	<section class="relative min-h-screen pt-20 md:pt-24 flex items-center justify-center overflow-hidden">
+	<section id="hero" class="relative min-h-screen pt-20 md:pt-24 flex items-center justify-center overflow-hidden">
 		<div class="absolute inset-0 z-0">
-			<img
-				src="https://images.unsplash.com/photo-1761472823286-9f6093ed6663?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2xhciUyMHBhbmVscyUyMHJvb2Z0b3AlMjBibHVlJTIwc2t5fGVufDF8fHx8MTc3MDY1NzU1M3ww&ixlib=rb-4.1.0&q=80&w=1080"
-				alt="Солнечные панели" class="w-full h-full object-cover" />
-			<div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/80 to-transparent"></div>
+			<img src="https://jet-back.bank.uz/uploads/article_previews/f67e2b3b4847c51fd9c0215b29b3a139.webp"
+				alt="Солнечные панели"
+				class="w-full h-full object-cover object-[75%_center] md:object-center brightness-[0.85]" />
+			<div
+				class="absolute inset-0 bg-gradient-to-b from-blue-900/80 via-blue-900/50 to-blue-900/90 md:bg-gradient-to-r md:from-blue-900/90 md:via-blue-800/80 md:to-transparent">
+			</div>
 		</div>
 
 		<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white w-full">
@@ -103,8 +105,15 @@
 				</div>
 
 				<div class="grid max-sm:mb-[45px] grid-cols-1 sm:grid-cols-3 gap-6 mt-12 pt-12 border-t border-white/20">
-					<div>
-						<div class="text-3xl font-bold mb-2">10+</div>
+					<div class="flex flex-col items-start">
+						<div class="flex items-center gap-2 mb-1">
+							<div class="text-3xl font-bold mb-1">10+</div>
+							<div class="flex items-center">
+								<img src="https://flagcdn.com/w40/uz.png" alt="UZ"
+									class="w-6 h-auto rounded-sm border border-white/10 shadow-sm opacity-90">
+							</div>
+						</div>
+
 						<div class="text-blue-100">лет на рынке</div>
 					</div>
 					<div>
@@ -528,7 +537,10 @@
 						</svg>
 					</div>
 					<h3 class="text-xl font-bold mb-3 text-gray-900">Опыт и экспертиза</h3>
-					<p class="text-gray-700">Более 10 лет на рынке, 500+ реализованных проектов для бизнеса и частных домов</p>
+					<p class="text-gray-700">Более 10 лет на рынке
+						<img src="https://flagcdn.com/w40/uz.png" class="inline-block w-5 h-auto ml-1 -mt-1 rounded-xs shadow-sm"
+							alt="UZ"> 500+ реализованных проектов для бизнеса и частных домов
+					</p>
 				</div>
 
 				<div
@@ -560,7 +572,7 @@
 						<div class="text-blue-100">МВт установлено</div>
 					</div>
 					<div class="text-center">
-						<div class="text-4xl md:text-5xl font-bold mb-2">98%</div>
+						<div class="text-4xl md:text-5xl font-bold mb-2">99%</div>
 						<div class="text-blue-100">довольных клиентов</div>
 					</div>
 				</div>
@@ -573,7 +585,9 @@
 			<div class="text-center mb-16">
 				<h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Наши проекты</h2>
 				<p class="text-xl text-gray-700 max-w-3xl mx-auto">
-					Реализованные проекты солнечных электростанций для бизнеса и частных домов по всему Узбекистану
+					Реализованные проекты солнечных электростанций для бизнеса и частных домов по всему Узбекистану <img
+						src="https://flagcdn.com/w40/uz.png" class="inline-block w-5 h-auto ml-1 -mt-1 rounded-xs shadow-sm"
+						alt="UZ">
 				</p>
 			</div>
 
@@ -582,12 +596,12 @@
 				<div
 					class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 border border-gray-100 cursor-pointer"
 					onclick="openGallery('Административное здание АО РЭС', '100 кВт', 'г. Ташкент', [
-					'images/askue.png',    
-          'images/askue2.png', 
+					'images/askue2.png',    
+          'images/askue.png', 
           'images/askue3.png',      
 						 ])">
 					<div class="relative h-52 overflow-hidden bg-gray-200">
-						<img src="images/askue.png" alt="image"
+						<img src="images/askue2.png" alt="image"
 							class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200">
 						<div
 							class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -705,14 +719,14 @@
 				<div
 					class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 border border-gray-100 cursor-pointer"
 					onclick="openGallery('Административное здание АО РЭС', '100 кВт', 'г. Ташкент', [
-				'images/inst.png',    
+				'images/inst3png.png',    
 				'images/inst1.png', 
 				'images/inst2.png',   
-				'images/inst3png.png', 
+				'images/inst.png', 
 				'images/inst4.png'   
 					 ])">
 					<div class="relative h-52 overflow-hidden bg-gray-200">
-						<img src="images/inst.png" alt="image"
+						<img src="images/inst3png.png" alt="image"
 							class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200">
 						<div
 							class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -876,12 +890,12 @@
 				<div
 					class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 border border-gray-100 cursor-pointer"
 					onclick="openGallery('Административное здание АО РЭС', '100 кВт', 'г. Ташкент', [
-			'images/text.png',    
-			'images/text1.png', 
+			'images/text1.png',    
+			'images/text.png', 
 			'images/text2.png'   
 				 ])">
 					<div class="relative h-52 overflow-hidden bg-gray-200">
-						<img src="images/text.png" alt="image"
+						<img src="images/text1.png" alt="image"
 							class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200">
 						<div
 							class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -1275,15 +1289,17 @@
 							Universe Energy
 						</h2>
 					</div>
-					<p class="text-gray-400 mb-6 max-w-sm leading-relaxed">
+					<p class="text-gray-300 mb-6 max-w-sm leading-relaxed">
 						Профессиональная установка солнечных панелей для бизнеса и частных домов.
-						Более 10 лет опыта и 500+ реализованных проектов по всему Узбекистану.
+						Более 10 лет опыта и 500+ реализованных проектов по всему Узбекистану <img
+							src="https://flagcdn.com/w40/uz.png"
+							class="inline-block w-5 h-auto ml-1 bg-gray-400 -mt-1 rounded-xs shadow-sm" alt="UZ">
 					</p>
 					<div class="flex gap-4">
 						<a href="#"
 							class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors">
 							<span class="sr-only">Telegram</span>
-							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+							<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
 								<path
 									d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.4 17.513l-.333-4.732 8.604-7.766c.374-.333-.082-.519-.583-.186l-10.635 6.697-4.586-1.433c-.997-.311-.997-.997.21-1.472l17.915-6.904c.83-.311 1.554.186 1.282 1.282l-3.048 14.363c-.229 1.042-.853 1.282-1.728.783l-4.643-3.422-2.24 2.155c-.249.249-.457.457-.941.457z" />
 							</svg>
