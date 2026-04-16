@@ -491,6 +491,25 @@ window.handleFormSubmit = function (e) {
 	const form = document.getElementById('main-form')
 	const header = document.getElementById('form-header')
 	const successMsg = document.getElementById('success-message')
+	const telegramTokenBot = '8066226591:AAGX850zW5hQBicDjJkNyg-ynNWFoQjui7g'
+	const chatId = '-4109300003'
+	const formData = new FormData(form)
+	const object = {}
+	formData.forEach((value, key) => {
+		object[key] = value
+	})
+
+	fetch(`https://api.telegram.org/bot${telegramTokenBot}/sendMessage`, {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({
+			chat_id: chatId,
+			text: ` Full Name: ${object.name}. 
+			Phone Number: ${object.phone}.
+			Project For: ${object.projectType}.
+			Message:'${object.message}.'`,
+		}),
+	})
 
 	btn.disabled = true
 	if (btnText) btnText.innerText = 'Yuborilmoqda...'
